@@ -1,0 +1,48 @@
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+
+<body>
+
+    <h1>w3PO</h1>
+    <h2>personal <br>amount-of-words-<br>into-integer-translator</h2>
+    <p>Fill in your text and click on "Count Words"...</p>
+
+    <form action="{% url 'count' %}">
+        <textarea cols="50" rows="10" name="fulltext"></textarea>
+        <br><br>
+        <input type="submit" value="Count Words!" id="submit-button" />
+        <br><br>
+    </form>
+
+</body>
+
+
+<style>
+    body {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        background-color: #5f9ea0;
+        color: #E4FEFF;
+        font-size: 1em;
+        margin: 0;
+        padding: 40px;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    h1, h2, h3 {
+        font-family: 'Press Start 2P', cursive;
+        line-height: 1.6em;
+    }
+    #submit-button {
+        height: 40px;
+        width: 200px;
+        background-color: #263F40;
+        color: #E4FEFF;
+        font-size: 1.2em;
+        font-family: 'Courier New', Courier, monospace;
+        margin: none;
+        border: none;
+    }
+
+</style>
